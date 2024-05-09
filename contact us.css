@@ -1,0 +1,184 @@
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ffffff;
+}
+.header {
+  background-color: rgb(254, 254, 254);
+  color:rgb(0, 0, 0);
+  display: grid;
+  grid-template-areas:
+    "logo navbar navbar"
+    "content content content";
+  overflow: auto;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0rem 3rem;
+}
+/* logo styling */
+.logo {
+  display: flex;
+  flex-direction: row;
+  grid-area: logo;
+  background-color: white;
+}
+.logo img {
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  align-self: center;
+}
+.logo h1 {
+  text-align: center;
+  margin: 0;
+  align-self: center;
+  padding: 0;
+  /* width: 4rem; */
+  /* border-radius: 40px;
+  box-shadow: 0px 6px 10px 0px blue; */
+}
+
+/* navbar styling */
+.navbar {
+  display: flex;
+  border: 1rem solid rgb(255, 255, 255);
+  margin: 1rem 3rem;
+  /* box-shadow: 0 -10px 50px 5px rgb(119, 119, 237); */
+  height: 2rem;
+  border-radius: 1rem;
+  grid-area: navbar;
+}
+.navbar a {
+  font: bolder;
+  color: rgb(0, 0, 0);
+  float: left;
+  font-size: 2rem;
+  text-decoration: solid;
+  margin: auto 3rem;
+  text-align: center;
+  border-radius: 5rem;
+  /* box-shadow: 0px 6px 10px 0px blue; */
+  /* width: 10rem; */
+
+}
+.navbar a:hover {
+  background-color: #d6d6d6;
+}
+#myaccount {
+  justify-self: right;
+}
+
+
+/* first image csss styling */
+.first-img{
+  display: flex;
+  background-image: url(https://img.freepik.com/free-vector/binary-code-white-background-with-floating-numbers_1017-25331.jpg);
+  height: 20vw;
+  background-position: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.59;
+  margin: 0rem -1rem;
+  background-color: rgb(140 186 254 / 22%);
+}
+
+.first-img h3{
+  font-size: 4rem;
+}
+
+
+
+/* introduction part css */
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1.2rem -1rem;
+  padding: 10rem 8rem;
+  background-color: rgb(230, 240, 240);
+}
+.intro{
+  padding: 1rem 4.5rem;
+}
+.pic{
+  display: flex;
+  justify-content: center;
+}
+
+.pic img{
+  width: 15rem;
+  height: 15rem;
+}
+
+/* content syle */
+.content {
+  grid-area: content;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 5rem 8rem;
+  padding: 1.2rem 4rem;
+}
+#teachings {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: repeat(4,2fr);
+  grid-gap: 2rem;
+  grid-row: 4/span 2 ;
+  grid-column: 1/span 1;
+}
+.features{
+  border: 1rem solid rgb(162, 228, 249);
+  border-radius: 3rem;
+}
+
+/* cources css styling */
+.cources-temp{
+  padding: 5rem 8rem;
+  border: 0.2rem solid rgb(255, 255, 255);
+  margin: 0px 0px;
+  background-color: #efefef;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#cources-heading{
+  text-align: center;
+
+}
+
+.cource{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.2rem 1.2rem;
+  padding: 0px 0px ;
+  border: 5px solid black;
+  border-radius: 3rem;
+}
+.cource img{
+    width: 25rem;
+    border-radius: 2rem;
+    
+}
+
+
+/* footer css styling */
+.footer{
+  margin: 0rem -1rem;
+
+}
+.footer h3{
+  text-align: center;
+  font-size: 2rem;
+  
+}
+.sponcers{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sponcers img{
+     height: 10rem;
+     margin: 0rem auto;
+}
